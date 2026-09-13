@@ -23,6 +23,14 @@ Import-Module -Name Microsoft.WinGet.CommandNotFound
 ###############
 
 Set-PSReadLineOption -EditMode Emacs
+Set-PSReadLineOption -HistoryNoDuplicates
+Set-PSReadLineOption -MaximumHistoryCount 5000
+
+##################
+### Key remaps ###
+##################
+
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
 ###############
 ### Aliases ###
