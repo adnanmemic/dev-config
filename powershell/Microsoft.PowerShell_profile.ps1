@@ -19,6 +19,12 @@ Import-Module -Name Terminal-Icons
 Import-Module -Name Microsoft.WinGet.CommandNotFound
 
 ###############
+### Options ###
+###############
+
+Set-PSReadLineOption -EditMode Emacs
+
+###############
 ### Aliases ###
 ###############
 
