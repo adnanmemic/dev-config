@@ -1,4 +1,8 @@
 {
+  //////////////
+  /// Editor ///
+  //////////////
+
   "editor.fontSize": 15,
   "editor.fontFamily": "FiraCode Nerd Font",
   "editor.lineNumbers": "relative",
@@ -10,81 +14,154 @@
   "editor.inlineSuggest.enabled": false,
   "editor.rulers": [80],
   "editor.minimap.enabled": false,
-  
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  ////////////////
+  /// Terminal ///
+  ////////////////
+
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "terminal.integrated.cursorBlinking": true,
-  
+  "terminal.integrated.allowChords": false,
+
+  /////////////////
+  /// Workbench ///
+  /////////////////
+
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Tokyo Night Storm",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
 
+  //////////////////
+  /// Chat agent ///
+  //////////////////
+
   "chat.agent.enabled": false,
 
+  /////////////////
+  /// Extension ///
+  /////////////////
+
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
+    "vscodevim.vim": 1, // vim extension has highest priority
   },
+
+  //////////////////////
+  /// Dart & Flutter ///
+  //////////////////////
+
+  "dart.flutterSdkPath": "C:\\Users\\Adnan\\flutter",
+  "dart.flutterHotReloadOnSave": "all",
+
+  /////////////////
+  /// Formatter ///
+  /////////////////
+
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+  },
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  ///////////
+  /// Vim ///
+  ///////////
 
   "vim.leader": " ",
   "vim.highlightedyank.enable": true,
+  // Let vscode handle these keybindings, not the vim extension
   "vim.handleKeys": {
-    "<C-j>": false,
     "<C-b>": false,
-    "<C-p>": false
+    "<C-f>": false,
+    "<C-n>": false,
+    "<C-p>": false,
   },
   "vim.normalModeKeyBindingsNonRecursive": [
+    // --- Navigation --- //
+
+    // Center cursor when half paging
+    { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
+    { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
+
+    // Center cursor when navigating search results
+    { "before": ["n"], "after": ["n", "z", "z", "z", "v"] },
+    { "before": ["N"], "after": ["N", "z", "z", "z", "v"] },
+
+    // Split pane
     {
-      "before": ["<C-d>"],
-      "after": ["<C-d>", "z", "z"]
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.splitEditor"],
     },
     {
-      "before": ["<C-u>"],
-      "after": ["<C-u>", "z", "z"]
+      "before": ["<leader>", "v"],
+      "commands": ["workbench.action.splitEditorDown"],
     },
+    // Close current tab
     {
-      "before": ["n"],
-      "after": ["n", "z", "z", "z", "v"]
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.closeActiveEditor"],
     },
+
+    // Navigate between editor groups
+    { "before": ["<C-l>"], "commands": ["workbench.action.focusRightGroup"] },
+    { "before": ["<C-h>"], "commands": ["workbench.action.focusLeftGroup"] },
+    { "before": ["<C-k>"], "commands": ["workbench.action.focusAboveGroup"] },
+    { "before": ["<C-j>"], "commands": ["workbench.action.focusBelowGroup"] },
+
+    // --- Coding --- //
+
+    // Go to definition
+    { "before": ["g", "d"], "commands": ["editor.action.revealDefinition"] },
+    // Go to references
+    { "before": ["g", "r"], "commands": ["editor.action.goToReferences"] },
+    // Go to implementation
+    { "before": ["g", "i"], "commands": ["editor.action.goToImplementation"] },
+
+    // Show code actions
+    { "before": ["<leader>", "a"], "commands": ["editor.action.codeAction"] },
+
+    // Rename symbol
+    { "before": ["<leader>", "r"], "commands": ["editor.action.rename"] },
+
+    // Show hover information
+    { "before": ["K"], "commands": ["editor.action.showHover"] },
+
+    // Format document
     {
-      "before": ["N"],
-      "after": ["N", "z", "z", "z", "v"]
-    }, 
-    {
-      "before": ["]", "d"],
-      "commands":  ["editor.action.marker.nextInFiles"]
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.formatDocument"],
     },
-    {
-      "before": ["[", "d"],
-      "commands": ["editor.action.marker.prevInFiles"]
-    },
-    {
-      "before": ["<leader>", "y"],
-      "after": ["\"", "+", "y"]
-    },
-    {
-      "before": ["<leader>", "a"],
-      "commands": ["editor.action.codeAction"]
-    },
-    {
-      "before": ["K"],
-      "commands": ["editor.action.showHover"]
-    }
+
+    // Toggle line comment
+    { "before": ["<leader>", "c"], "commands": ["editor.action.commentLine"] },
+
+    // Yank to system clipboard
+    { "before": ["<leader>", "y"], "after": ["\"", "+", "y"] },
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["J"],
-      "commands": ["editor.action.moveLinesDownAction"]
-    },
-    {
-      "before": ["K"],
-      "commands": ["editor.action.moveLinesUpAction"]
-    },
-    {
-    "before": ["<leader>", "y"],
-    "after": ["\"", "+", "y"]
-    }
-  ],
+    // Stay in visual mode while moving selected lines up/down
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
 
-  "dart.flutterSdkPath": "C:\\Users\\Adnan\\flutter",
-  "dart.flutterHotReloadOnSave": "all"
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+
+    // Toggle line comment
+    { "before": ["<leader>", "c"], "commands": ["editor.action.commentLine"] },
+
+    // Yank to system clipboard
+    { "before": ["<leader>", "y"], "after": ["\"", "+", "y"] },
+  ],
 }

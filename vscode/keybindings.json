@@ -1,22 +1,95 @@
 [
+  //////////////////
+  /// Navigation ///
+  //////////////////
+
+  // Navigate through code suggestions
   {
     "key": "ctrl+n",
     "command": "selectNextSuggestion",
-    "when": "suggestWidgetVisible"
+    "when": "suggestWidgetVisible",
   },
   {
     "key": "ctrl+p",
     "command": "selectPrevSuggestion",
-    "when": "suggestWidgetVisible"
+    "when": "suggestWidgetVisible",
   },
+
+  // Navigate through file search
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen",
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen",
+  },
+
+  // Navigate through the tabs in a tabgroup
+  {
+    "key": "tab",
+    "command": "workbench.action.nextEditorInGroup",
+    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)",
+  },
+  {
+    "key": "shift+tab",
+    "command": "workbench.action.previousEditorInGroup",
+    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)",
+  },
+
+  // Open sidebar and focus on explorer
   {
     "key": "ctrl+b",
     "command": "workbench.view.explorer",
-    "when": "!sideBarVisible"
+    "when": "!sideBarVisible",
   },
   {
     "key": "ctrl+b",
     "command": "workbench.action.closeSidebar",
-    "when": "sideBarVisible"
-  }
+    "when": "sideBarVisible",
+  },
+
+  ////////////////
+  /// Terminal ///
+  ////////////////
+
+  // Toggle terminal
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.toggleTerminal",
+  },
+
+  // Do not open file search when pressing ctrl+p inside the terminal
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen",
+    "when": "!terminalFocus && !inQuickOpen && !suggestWidgetVisible",
+  },
+
+  ///////////////////////////
+  /// Removed keybindings ///
+  ///////////////////////////
+
+  // Initial terminal toggle shortcut
+  {
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel",
+  },
+  // File search
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen",
+  },
+  // File search
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen",
+  },
+  // Focus find inside the terminal
+  {
+    "key": "ctrl+f",
+    "command": "-workbench.action.terminal.focusFind",
+  },
 ]
