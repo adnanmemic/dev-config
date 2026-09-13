@@ -89,6 +89,22 @@
         {
             "id": null,
             "keys": "ctrl+shift+w"
+        },
+        {
+            "id": "Terminal.DuplicatePaneDown",
+            "keys": "alt+v"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+minus"
+        },
+        {
+            "id": "Terminal.DuplicatePaneRight",
+            "keys": "alt+s"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+plus"
         }
     ],
     "newTabMenu": 
