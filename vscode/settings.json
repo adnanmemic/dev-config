@@ -24,6 +24,7 @@
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.allowChords": false,
+  "terminal.integrated.stickyScroll.enabled": false,
 
   /////////////////
   /// Workbench ///
