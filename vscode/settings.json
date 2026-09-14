@@ -101,11 +101,11 @@
     // Split pane
     {
       "before": ["<leader>", "s"],
-      "commands": ["workbench.action.splitEditor"],
+      "commands": ["workbench.action.splitEditorDown"],
     },
     {
       "before": ["<leader>", "v"],
-      "commands": ["workbench.action.splitEditorDown"],
+      "commands": ["workbench.action.splitEditor"],
     },
     // Close current tab
     {
