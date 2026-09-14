@@ -39,20 +39,20 @@
             "keys": "ctrl+c"
         },
         {
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "id": "User.paste",
-            "keys": "ctrl+v"
+            "id": null,
+            "keys": "alt+right"
         },
         {
             "id": null,
             "keys": "alt+up"
         },
         {
-            "id": null,
-            "keys": "alt+right"
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
         },
         {
             "id": null,
@@ -91,20 +91,20 @@
             "keys": "ctrl+shift+w"
         },
         {
-            "id": "Terminal.DuplicatePaneDown",
-            "keys": "alt+v"
-        },
-        {
             "id": null,
             "keys": "alt+shift+minus"
         },
         {
-            "id": "Terminal.DuplicatePaneRight",
-            "keys": "alt+s"
-        },
-        {
             "id": null,
             "keys": "alt+shift+plus"
+        },
+        {
+            "id": "Terminal.DuplicatePaneRight",
+            "keys": "alt+v"
+        },
+        {
+            "id": "Terminal.DuplicatePaneDown",
+            "keys": "alt+s"
         }
     ],
     "newTabMenu": 
