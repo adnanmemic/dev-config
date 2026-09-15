@@ -34,11 +34,12 @@
   "workbench.colorTheme": "Tokyo Night Storm",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
 
-  //////////////////
-  /// Chat agent ///
-  //////////////////
+  ////////////
+  /// Chat ///
+  ////////////
 
   "chat.agent.enabled": false,
+  "chat.titleBar.signIn.enabled": false,
 
   /////////////////
   /// Extension ///
