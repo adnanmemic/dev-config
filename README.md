@@ -12,10 +12,9 @@ Setup for:
 8. Fastfetch
 9. Oh My Posh
 
+## Prerequisites
 
-## Installation
-
-**Windows**
+### Windows
 
 1. Enable Windows Developer Mode
 
@@ -31,18 +30,7 @@ winget install JanDeDobbeleer.OhMyPosh --source winget
 winget install Fastfetch-cli.Fastfetch --source winget
 ```
 
-5. Clone the repository and change into it
-```PowerShell
-git clone https://github.com/adnanmemic/dev-config.git ~/.dev-config && Set-Location ~/.dev-config
-```
-
-6. Start the installation script
-```PowerShell
-.\win-install.ps1
-```
-
-
-**Linux / WSL**
+### Linux / WSL
 
 1. Install [FiraCode Nerd Font](https://www.nerdfonts.com/font-downloads)
 
@@ -58,12 +46,28 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 4. Install [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
 
-5. Clone the repository and change into it
+## Installation
+
+### Windows
+
+1. Clone the repository and change into it
+```PowerShell
+git clone https://github.com/adnanmemic/dev-config.git ~/.dev-config && Set-Location ~/.dev-config
+```
+
+2. Start the installation script
+```PowerShell
+.\win-install.ps1
+```
+
+### Linux / WSL
+
+1. Clone the repository and change into it
 ```bash
 git clone https://github.com/adnanmemic/dev-config.git ~/.dev-config && cd ~/.dev-config
 ```
 
-6. Start the installation script
+2. Start the installation script
 ```bash
 ./lin-install
 ```
