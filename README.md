@@ -52,10 +52,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 1. Clone the repository and change into it
 ```PowerShell
-git clone https://github.com/adnanmemic/dev-config.git ~/.dev-config && Set-Location ~/.dev-config
+git clone https://github.com/adnanmemic/dev-config.git ~\.dev-config && Set-Location ~\.dev-config
 ```
 
-2. Start the installation script
+2. Run the installation script
 ```PowerShell
 .\win-install.ps1
 ```
@@ -67,7 +67,7 @@ git clone https://github.com/adnanmemic/dev-config.git ~/.dev-config && Set-Loca
 git clone https://github.com/adnanmemic/dev-config.git ~/.dev-config && cd ~/.dev-config
 ```
 
-2. Start the installation script
+2. Run the installation script
 ```bash
 ./lin-install
 ```
