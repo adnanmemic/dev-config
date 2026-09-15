@@ -1,6 +1,6 @@
-# Configs
+# Dev Configs
 
-Setup for:
+**My dev configs for:**
 
 1. VS Code
 2. Windows Terminal
