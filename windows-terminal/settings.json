@@ -35,24 +35,24 @@
     "keybindings": 
     [
         {
+            "id": "Terminal.MoveFocusUp",
+            "keys": "ctrl+shift+k"
+        },
+        {
             "id": "User.copy.644BA8F2",
             "keys": "ctrl+c"
         },
         {
-            "id": null,
-            "keys": "alt+right"
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
         },
         {
             "id": null,
             "keys": "alt+up"
         },
         {
-            "id": "User.paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "id": null,
+            "keys": "alt+right"
         },
         {
             "id": null,
@@ -63,31 +63,7 @@
             "keys": "alt+down"
         },
         {
-            "id": "Terminal.MoveFocusLeft",
-            "keys": "alt+h"
-        },
-        {
-            "id": "Terminal.MoveFocusUp",
-            "keys": "alt+k"
-        },
-        {
-            "id": "Terminal.MoveFocusRight",
-            "keys": "alt+l"
-        },
-        {
-            "id": "Terminal.MoveFocusDown",
-            "keys": "alt+j"
-        },
-        {
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+d"
-        },
-        {
             "id": "Terminal.ClosePane",
-            "keys": "alt+w"
-        },
-        {
-            "id": null,
             "keys": "ctrl+shift+w"
         },
         {
@@ -99,12 +75,20 @@
             "keys": "alt+shift+plus"
         },
         {
-            "id": "Terminal.DuplicatePaneRight",
-            "keys": "alt+v"
+            "id": "User.splitPane.A6751878",
+            "keys": "ctrl+shift+s"
         },
         {
-            "id": "Terminal.DuplicatePaneDown",
-            "keys": "alt+s"
+            "id": "Terminal.MoveFocusLeft",
+            "keys": "ctrl+shift+h"
+        },
+        {
+            "id": "Terminal.MoveFocusRight",
+            "keys": "ctrl+shift+l"
+        },
+        {
+            "id": "Terminal.MoveFocusDown",
+            "keys": "ctrl+shift+j"
         }
     ],
     "newTabMenu": 
