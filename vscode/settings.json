@@ -16,6 +16,12 @@
   "editor.minimap.enabled": false,
   "editor.cursorSmoothCaretAnimation": "on",
 
+  /////////////
+  /// Files ///
+  /////////////
+
+  "files.insertFinalNewline": true,
+
   ////////////////
   /// Terminal ///
   ////////////////
