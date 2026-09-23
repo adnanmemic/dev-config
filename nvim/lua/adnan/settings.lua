@@ -4,6 +4,8 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
+vim.opt.colorcolumn = "80"
+
 -- theme
 vim.cmd.colorscheme("tokyonight")
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
