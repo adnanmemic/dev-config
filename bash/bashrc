@@ -51,6 +51,9 @@ export PATH="/usr/local/texlive/2026/bin/x86_64-linux:$PATH"
 # Racket
 export PATH="/opt/racket/bin:$PATH"
 
+# Treesitter
+export PATH="/opt/treesitter:$PATH"
+
 #####################
 ### Shell options ###
 #####################
