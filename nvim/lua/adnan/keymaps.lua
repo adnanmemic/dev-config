@@ -12,4 +12,8 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- stay in visual mode after indenting
+vim.keymap.set("v", ">", ">gv")
+vim.keymap.set("v", "<", "<gv")
+
 vim.keymap.set("n", "<C-b>", vim.cmd.Ex)
