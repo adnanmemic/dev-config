@@ -14,6 +14,9 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
+vim.opt.splitbelow = true -- splits show up below by default
+vim.opt.splitright = true -- splits got to the right by default
+
 -- highlight when yank
 vim.api.nvim_create_autocmd("TextYankPost", {
   callback = function()
