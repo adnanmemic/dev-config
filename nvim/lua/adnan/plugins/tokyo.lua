@@ -1,4 +1,4 @@
-return{
+return {
 	"folke/tokyonight.nvim",
 
 	-- configs
@@ -8,5 +8,5 @@ return{
 			transparent = true,
 		})
 		vim.cmd.colorscheme("tokyonight")
-	end
+	end,
 }
