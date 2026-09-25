@@ -11,7 +11,7 @@ return {
 		require("telescope").setup({})
 
 		vim.keymap.set("n", "<leader>fh", require("telescope.builtin").help_tags)
-		vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files)
+		vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files)
 		vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none" })
 	end,
 }
