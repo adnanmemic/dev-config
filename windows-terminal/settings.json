@@ -55,16 +55,20 @@
             "keys": "alt+right"
         },
         {
+            "id": "Terminal.ClosePane",
+            "keys": "ctrl+shift+w"
+        },
+        {
             "id": null,
             "keys": "alt+left"
         },
         {
-            "id": null,
-            "keys": "alt+down"
+            "id": "Terminal.SwitchToTab2",
+            "keys": "alt+3"
         },
         {
-            "id": "Terminal.ClosePane",
-            "keys": "ctrl+shift+w"
+            "id": null,
+            "keys": "alt+down"
         },
         {
             "id": null,
@@ -73,6 +77,10 @@
         {
             "id": null,
             "keys": "alt+shift+plus"
+        },
+        {
+            "id": "Terminal.SwitchToTab0",
+            "keys": "alt+1"
         },
         {
             "id": "User.splitPane.A6751878",
@@ -87,8 +95,64 @@
             "keys": "ctrl+shift+l"
         },
         {
+            "id": "Terminal.SwitchToTab7",
+            "keys": "alt+8"
+        },
+        {
             "id": "Terminal.MoveFocusDown",
             "keys": "ctrl+shift+j"
+        },
+        {
+            "id": "Terminal.SwitchToTab5",
+            "keys": "alt+6"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+1"
+        },
+        {
+            "id": "Terminal.SwitchToTab1",
+            "keys": "alt+2"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+2"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+3"
+        },
+        {
+            "id": "Terminal.SwitchToTab3",
+            "keys": "alt+4"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+7"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+4"
+        },
+        {
+            "id": "Terminal.SwitchToTab4",
+            "keys": "alt+5"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+5"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+6"
+        },
+        {
+            "id": "Terminal.SwitchToTab6",
+            "keys": "alt+7"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+8"
         }
     ],
     "newTabMenu": 
@@ -111,7 +175,7 @@
                 "size": 13,
                 "weight": "normal"
             },
-            "opacity": 75,
+            "opacity": 80,
             "padding": "8",
             "scrollbarState": "visible",
             "useAcrylic": false
