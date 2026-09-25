@@ -12,6 +12,8 @@ vim.opt.swapfile = false
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
+vim.opt.termguicolors = true
+
 -- highlight when yank
 vim.api.nvim_create_autocmd("TextYankPost", {
   callback = function()
