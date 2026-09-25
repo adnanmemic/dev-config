@@ -35,24 +35,16 @@
     "keybindings": 
     [
         {
-            "id": "Terminal.MoveFocusUp",
-            "keys": "ctrl+shift+k"
+            "id": "User.splitPane.A6751878",
+            "keys": "ctrl+shift+d"
         },
         {
             "id": "User.copy.644BA8F2",
             "keys": "ctrl+c"
         },
         {
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "id": null,
-            "keys": "alt+up"
-        },
-        {
-            "id": null,
-            "keys": "alt+right"
+            "id": "Terminal.MoveFocusUp",
+            "keys": "ctrl+shift+k"
         },
         {
             "id": "Terminal.ClosePane",
@@ -60,11 +52,23 @@
         },
         {
             "id": null,
-            "keys": "alt+left"
+            "keys": "alt+right"
+        },
+        {
+            "id": null,
+            "keys": "alt+up"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
         },
         {
             "id": "Terminal.SwitchToTab2",
             "keys": "alt+3"
+        },
+        {
+            "id": null,
+            "keys": "alt+left"
         },
         {
             "id": null,
@@ -81,10 +85,6 @@
         {
             "id": "Terminal.SwitchToTab0",
             "keys": "alt+1"
-        },
-        {
-            "id": "User.splitPane.A6751878",
-            "keys": "ctrl+shift+s"
         },
         {
             "id": "Terminal.MoveFocusLeft",
@@ -175,7 +175,7 @@
                 "size": 13,
                 "weight": "normal"
             },
-            "opacity": 80,
+            "opacity": 90,
             "padding": "8",
             "scrollbarState": "visible",
             "useAcrylic": false
