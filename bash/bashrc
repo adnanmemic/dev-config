@@ -28,10 +28,6 @@ export LESS_TERMCAP_us=$'\e[01;32m'    # begin underline (green)
 ### Paths ###
 #############
 
-# Java
-export JAVA_HOME="/opt/java/latest"
-export PATH="$JAVA_HOME/bin:$PATH"
-
 # Maven
 export MAVEN_HOME="/opt/maven/latest"
 export PATH="$MAVEN_HOME/bin:$PATH"
@@ -50,6 +46,9 @@ export PATH="/usr/local/texlive/2026/bin/x86_64-linux:$PATH"
 
 # Racket
 export PATH="/opt/racket/bin:$PATH"
+
+# Node
+export PATH="/opt/node/bin:$PATH"
 
 #####################
 ### Shell options ###
