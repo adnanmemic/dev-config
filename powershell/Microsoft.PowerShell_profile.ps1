@@ -2,7 +2,7 @@
 ### Oh my posh ###
 ##################
 
-$theme = "robbyrussell"
+$theme = "custom"
 oh-my-posh init pwsh --config "$HOME\.omp-themes\$theme.omp.json" | Invoke-Expression
 
 #################
