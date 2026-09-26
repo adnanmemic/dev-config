@@ -18,10 +18,6 @@ vim.keymap.set("v", "<", "<gv")
 
 vim.keymap.set("n", "<C-b>", vim.cmd.Ex)
 
--- make j/k visual down and up instead of whole line
-vim.keymap.set("n", "k", "gk")
-vim.keymap.set("n", "j", "gj")
-
 -- split navigation
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
