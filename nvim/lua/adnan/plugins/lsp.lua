@@ -8,6 +8,7 @@ return {
 				ensure_installed = {
 					"jdtls",
 					"lua_ls",
+					"bashls",
 				},
 				automatic_enable = {
 					exclude = { "jdtls" },
