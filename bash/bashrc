@@ -105,7 +105,7 @@ fi
 ### Oh my posh ###
 ##################
 
-theme='robbyrussell'
+theme='custom'
 eval "$(oh-my-posh init bash --config "$HOME/.omp-themes/$theme.omp.json")"
 
 #################

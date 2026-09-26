@@ -1,0 +1,74 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 4,
+  "final_space": true,
+  "palette": {
+    "red": "#F7768E",
+    "grey": "#565f89",
+    "blue": "#7AA2f7",
+    "purple": "#9d7CD8",
+    
+    "black": "#000000",
+    "white": "#FFFFFF"
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "status",
+          "template": "\u274c ",
+          
+          "foreground": "p:red",
+          
+          "style": "plain"
+        },
+        {
+          "type": "session",
+          "template": " {{ .UserName }} ",
+          
+          "background": "p:blue",
+          "foreground": "p:black",
+          
+          "style": "diamond",
+          "leading_diamond": "\ue0b6"
+        },
+        {
+          "type": "root",
+          "template": " \uf0e7 ",
+          
+          "background": "p:red",
+          "foreground": "p:black",
+          
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0"
+        },
+        {
+          "type": "path",
+          "template": " {{ .Path }} ",
+          
+          "background": "p:grey",
+          "foreground": "p:white",
+          
+          "options": {
+            "style": "full"
+          },
+          
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0"
+        },
+        {
+          "type": "git",
+          "template": " {{ .HEAD }} ",
+          
+          "background": "p:purple",
+          "foreground": "p:black",
+          
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0"
+        }
+      ]
+    }
+  ]
+}
