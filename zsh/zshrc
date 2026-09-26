@@ -47,6 +47,9 @@ export PATH="/usr/local/texlive/2026/bin/x86_64-linux:$PATH"
 # Racket
 export PATH="/opt/racket/bin:$PATH"
 
+# Node
+export PATH="/opt/node/bin:$PATH"
+
 ###############
 ### Aliases ###
 ###############
@@ -67,7 +70,7 @@ command -v batcat &> /dev/null && alias bat='batcat --pager=cat'
 ### Oh my posh ###
 ##################
 
-theme='robbyrussell'
+theme='custom'
 eval "$(oh-my-posh init zsh --config "$HOME/.omp-themes/$theme.omp.json")"
 
 #################
