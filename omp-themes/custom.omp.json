@@ -3,10 +3,10 @@
   "version": 4,
   "final_space": true,
   "palette": {
-    "red": "#F7768E",
-    "grey": "#565f89",
-    "blue": "#7AA2f7",
-    "purple": "#9d7CD8",
+    "red": "#E06C75",
+    "grey": "#282C34",
+    "blue": "#61AFEF",
+    "purple": "#C678DD",
     
     "black": "#000000",
     "white": "#FFFFFF"
