@@ -78,4 +78,3 @@ eval "$(oh-my-posh init zsh --config "$HOME/.omp-themes/$theme.omp.json")"
 #################
 
 fastfetch
-
