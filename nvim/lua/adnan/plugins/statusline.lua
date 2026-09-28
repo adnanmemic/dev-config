@@ -1,7 +1,7 @@
 -- set theme
 -- themes: palenight, onedark
 
-local theme = "onedark"
+local theme = "auto"
 
 return {
 	"nvim-lualine/lualine.nvim",
