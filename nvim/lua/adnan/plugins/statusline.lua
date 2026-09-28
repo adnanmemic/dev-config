@@ -1,4 +1,6 @@
 -- set theme
+-- themes: palenight, onedark
+
 local theme = "onedark"
 
 return {

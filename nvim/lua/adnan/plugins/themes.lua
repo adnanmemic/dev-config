@@ -1,4 +1,6 @@
 -- set theme
+-- themes: tokyonight, onedark
+
 local theme = "onedark"
 
 return {
@@ -6,6 +8,8 @@ return {
 		"folke/tokyonight.nvim",
 
 		enabled = theme == "tokyonight",
+        lazy = false,
+        priority = 1000,
 
 		-- configs
 		config = function()
@@ -22,6 +26,8 @@ return {
 		"navarasu/onedark.nvim",
 
 		enabled = theme == "onedark",
+        lazy = false,
+        priority = 1000,
 
 		-- configs
 		config = function()
