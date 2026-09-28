@@ -13,7 +13,6 @@ vim.opt.wrap = false
 vim.opt.backup = false
 vim.opt.swapfile = false
 
-
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
@@ -26,7 +25,7 @@ vim.opt.laststatus = 3 -- show only a single global status line
 
 -- highlight when yank
 vim.api.nvim_create_autocmd("TextYankPost", {
-    callback = function()
-        vim.highlight.on_yank({ higroup="IncSearch", timeout=200 })
-    end,
+	callback = function()
+		vim.highlight.on_yank({ higroup = "IncSearch", timeout = 200 })
+	end,
 })
