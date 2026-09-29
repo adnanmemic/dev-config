@@ -10,9 +10,6 @@ return {
 					"lua_ls",
 					"bashls",
 				},
-				automatic_enable = {
-					exclude = { "jdtls" },
-				},
 			})
 		end,
 	},
@@ -53,25 +50,7 @@ return {
 		end,
 	},
 	{
-		-- needed to jump to definitions in Java library code
+		-- additional jdtls functionality
 		"mfussenegger/nvim-jdtls",
-
-		-- configs
-		configs = function()
-			-- start jdtls for Java files
-			vim.api.nvim_create_autocmd("FileType", {
-				pattern = "java",
-				callback = function()
-					require("jdtls").start_or_attach({
-						cmd = { "jdtls" },
-						root_dir = vim.fs.root(0, {
-							".git",
-							"pom.xml",
-							"mvnw",
-						}),
-					})
-				end,
-			})
-		end,
-	},
+    }
 }

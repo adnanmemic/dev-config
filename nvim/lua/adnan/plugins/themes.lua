@@ -1,6 +1,5 @@
 -- set theme
 -- themes: tokyonight, onedark
-
 local theme = "onedark"
 
 return {
