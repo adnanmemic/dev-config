@@ -1,6 +1,5 @@
 -- set theme
 -- themes: palenight, onedark
-
 local theme = "auto"
 
 return {
