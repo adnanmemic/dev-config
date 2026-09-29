@@ -35,7 +35,7 @@ return {
 						colored = true,
 						icon_only = true,
 					},
-                    "diagnostics",
+					"diagnostics",
 				},
 				lualine_y = {
 					{

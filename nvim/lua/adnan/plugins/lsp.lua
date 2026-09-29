@@ -26,10 +26,10 @@ return {
 
 		-- configs
 		config = function()
-            -- diagnostics
-            vim.diagnostic.config({
-                virtual_text = true,
-            })
+			-- diagnostics
+			vim.diagnostic.config({
+				virtual_text = true,
+			})
 
 			-- configs for lua language server
 			vim.lsp.config("lua_ls", {
@@ -57,5 +57,5 @@ return {
 	{
 		-- additional jdtls functionality
 		"mfussenegger/nvim-jdtls",
-    }
+	},
 }
