@@ -5,8 +5,9 @@
   "palette": {
     "red": "#E06C75",
     "grey": "#282C34",
-    "blue": "#61AFEF",
+    "blue": "#7DCFFF",
     "purple": "#7373ff",
+    "yellow": "#E0AF68",
     
     "black": "#000000",
     "white": "#FFFFFF"
@@ -67,6 +68,31 @@
           
           "style": "powerline",
           "powerline_symbol": "\ue0b0"
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "python",
+          "template": " \ue73c {{ .Venv }}  ",
+          
+          "foreground": "p:yellow",
+          
+          "style": "plain"
+        },
+        {
+          "type": "time",
+          "template": "{{ .CurrentDate | date .Format }}",
+          "options": {
+            "time_format": "2006-01-02 15:04:05"
+          },
+
+          "foreground": "p:purple",
+
+          "style": "plain"
         }
       ]
     }
