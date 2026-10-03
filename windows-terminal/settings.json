@@ -39,32 +39,32 @@
     "keybindings": 
     [
         {
-            "id": "Terminal.MoveFocusUp",
-            "keys": "ctrl+shift+k"
+            "id": "User.splitPane.A6751878",
+            "keys": "ctrl+shift+d"
         },
         {
             "id": "User.copy.644BA8F2",
             "keys": "ctrl+c"
         },
         {
-            "id": "User.splitPane.A6751878",
-            "keys": "ctrl+shift+d"
+            "id": "Terminal.MoveFocusUp",
+            "keys": "ctrl+shift+k"
         },
         {
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "id": null,
-            "keys": "alt+up"
+            "id": "Terminal.ClosePane",
+            "keys": "ctrl+shift+w"
         },
         {
             "id": null,
             "keys": "alt+right"
         },
         {
-            "id": "Terminal.ClosePane",
-            "keys": "ctrl+shift+w"
+            "id": null,
+            "keys": "alt+up"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
         },
         {
             "id": "Terminal.SwitchToTab2",
@@ -174,7 +174,7 @@
             "cursorShape": "filledBox",
             "font": 
             {
-                "face": "FiraCode Nerd Font",
+                "face": "FiraCode Nerd Font Mono",
                 "size": 12
             },
             "opacity": 95,
