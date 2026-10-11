@@ -1,14 +1,14 @@
-return{
-    "windwp/nvim-ts-autotag",
+return {
+	"windwp/nvim-ts-autotag",
 
-    -- configs
-    config = function()
-        require("nvim-ts-autotag").setup({
-            opts = {
-                enable_close = true, -- auto close tags
-                enable_rename = true, -- auto rename pairs of tags
-                enable_close_on_slash = false -- auto close on trailing </
-            },
-        })
-    end
+	-- configs
+	config = function()
+		require("nvim-ts-autotag").setup({
+			opts = {
+				enable_close = true, -- auto close tags
+				enable_rename = true, -- auto rename pairs of tags
+				enable_close_on_slash = false, -- auto close on trailing </
+			},
+		})
+	end,
 }
