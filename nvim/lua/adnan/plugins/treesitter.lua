@@ -15,7 +15,6 @@ return {
             "css",
             "xml",
             "json",
-            "jsonc",
             "yaml",
             "gitignore"
 		}
