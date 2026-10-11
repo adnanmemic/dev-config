@@ -11,6 +11,9 @@ return {
 					"bashls",
 					"pyright",
 				},
+                automatic_enable = {
+                    exclude = { "jdtls" },
+                },
 			})
 		end,
 	},
@@ -57,8 +60,27 @@ return {
 			vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
 		end,
 	},
-	{
-		-- additional jdtls functionality
-		"mfussenegger/nvim-jdtls",
-	},
+    {
+        "mfussenegger/nvim-jdtls",
+        lazy = false,
+
+        config = function()
+
+            vim.api.nvim_create_autocmd("FileType", {
+                pattern = "java",
+                callback = function()
+
+                    require("jdtls").start_or_attach({
+
+                        cmd = { "jdtls" },
+                        root_dir = vim.fs.root(0, {
+                            "pom.xml",
+                            "mvnw",
+                            "gradlew",
+                        }),
+                    })
+                end,
+            })
+        end,
+    },
 }
