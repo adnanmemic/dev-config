@@ -10,6 +10,9 @@ return {
 					"lua_ls",
 					"bashls",
 					"pyright",
+                    "vtsls",
+                    "html",
+                    "cssls",
 				},
                 automatic_enable = {
                     exclude = { "jdtls" },
