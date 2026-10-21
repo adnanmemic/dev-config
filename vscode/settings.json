@@ -1,30 +1,31 @@
 {
-  //////////////
-  /// Editor ///
-  //////////////
+  // ---------
+  /// Editor
+  // ---------
 
   "editor.fontSize": 15,
   "editor.fontFamily": "FiraCode Nerd Font",
   "editor.lineNumbers": "relative",
+
   "editor.insertSpaces": true,
   "editor.tabSize": 4,
-  "editor.cursorSurroundingLines": 8,
-  "editor.cursorSurroundingLinesStyle": "default",
+
   "editor.snippetSuggestions": "top",
   "editor.inlineSuggest.enabled": false,
   "editor.rulers": [80],
   "editor.minimap.enabled": false,
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.formatOnSave": true,
 
-  /////////////
-  /// Files ///
-  /////////////
+  // --------
+  /// Files
+  // --------
 
   "files.insertFinalNewline": true,
 
-  ////////////////
-  /// Terminal ///
-  ////////////////
+  // -----------
+  /// Terminal
+  // -----------
 
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
@@ -32,39 +33,24 @@
   "terminal.integrated.allowChords": false,
   "terminal.integrated.stickyScroll.enabled": false,
 
-  /////////////////
-  /// Workbench ///
-  /////////////////
+  // ------------
+  /// Workbench
+  // ------------
 
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Tokyo Night Storm",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
 
-  ////////////
-  /// Chat ///
-  ////////////
+  // -------
+  /// Chat
+  // -------
 
   "chat.agent.enabled": false,
   "chat.titleBar.signIn.enabled": false,
 
-  /////////////////
-  /// Extension ///
-  /////////////////
-
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1, // vim extension has highest priority
-  },
-
-  //////////////////////
-  /// Dart & Flutter ///
-  //////////////////////
-
-  "dart.flutterSdkPath": "C:\\Users\\Adnan\\flutter",
-  "dart.flutterHotReloadOnSave": "all",
-
-  /////////////////
-  /// Formatter ///
-  /////////////////
+  // ------------
+  /// Formatter
+  // ------------
 
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
@@ -73,10 +59,20 @@
     "editor.defaultFormatter": "redhat.java",
   },
   "[lua]": {
-    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+    "editor.defaultFormatter": "JohnnyMorganz.stylua",
   },
-  "[dart]": {
-    "editor.defaultFormatter": "Dart-Code.dart-code",
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -84,10 +80,13 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
 
-  ///////////
-  /// Vim ///
-  ///////////
+  // ------
+  /// Vim
+  // ------
 
   "vim.leader": " ",
   "vim.highlightedyank.enable": true,
@@ -108,21 +107,6 @@
     // Center cursor when navigating search results
     { "before": ["n"], "after": ["n", "z", "z", "z", "v"] },
     { "before": ["N"], "after": ["N", "z", "z", "z", "v"] },
-
-    // Split pane
-    {
-      "before": ["<leader>", "s"],
-      "commands": ["workbench.action.splitEditorDown"],
-    },
-    {
-      "before": ["<leader>", "v"],
-      "commands": ["workbench.action.splitEditor"],
-    },
-    // Close current tab
-    {
-      "before": ["<leader>", "w"],
-      "commands": ["workbench.action.closeActiveEditor"],
-    },
 
     // Navigate between editor groups
     { "before": ["<C-l>"], "commands": ["workbench.action.focusRightGroup"] },

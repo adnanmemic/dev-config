@@ -1,7 +1,7 @@
 [
-  //////////////////
-  /// Navigation ///
-  //////////////////
+  // -------------
+  /// Navigation
+  // -------------
 
   // Navigate through code suggestions
   {
@@ -51,9 +51,9 @@
     "when": "sideBarVisible",
   },
 
-  ////////////////
-  /// Terminal ///
-  ////////////////
+  // -----------
+  /// Terminal
+  // -----------
 
   // Toggle terminal
   {
@@ -68,9 +68,9 @@
     "when": "!terminalFocus && !inQuickOpen && !suggestWidgetVisible",
   },
 
-  ///////////////////////////
-  /// Removed keybindings ///
-  ///////////////////////////
+  // ----------------------
+  /// Removed keybindings
+  // ----------------------
 
   // Initial terminal toggle shortcut
   {
