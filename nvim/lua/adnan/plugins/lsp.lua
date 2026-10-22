@@ -14,6 +14,7 @@ return {
 					"vtsls",
 					"html",
 					"cssls",
+					"lemminx",
 				},
 				automatic_enable = {
 					exclude = { "jdtls" },
