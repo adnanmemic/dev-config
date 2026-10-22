@@ -70,7 +70,6 @@ shopt -s autocd       # change directory without using cd
 
 alias grep='grep --color=auto'
 alias ls='ls -p --color=auto'
-alias google-java-format='google-java-format --aosp'
 
 command -v batcat &>/dev/null && alias bat='batcat --pager=cat'
 
@@ -101,9 +100,9 @@ PS1+='\[\e[38;5;81m\]\$\[\e[0m\] '
 
 # Load completion
 if [[ -f "/usr/share/bash-completion/bash_completion" ]]; then
-	source "/usr/share/bash-completion/bash_completion"
+    source "/usr/share/bash-completion/bash_completion"
 elif [[ -f "/etc/bash_completion" ]]; then
-	source "/etc/bash_completion"
+    source "/etc/bash_completion"
 fi
 
 ##################
