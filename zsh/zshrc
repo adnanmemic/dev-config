@@ -56,7 +56,6 @@ export PATH="/opt/node/bin:$PATH"
 
 alias grep='grep --color=auto'
 alias ls='ls -p --color=auto'
-alias google-java-format='google-java-format --aosp'
 
 command -v batcat &> /dev/null && alias bat='batcat --pager=cat'
 
