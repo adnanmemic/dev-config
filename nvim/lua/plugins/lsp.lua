@@ -2,38 +2,32 @@ return {
 	{
 		"mason-org/mason-lspconfig.nvim",
 
-		-- configs
-		config = function()
-			require("mason-lspconfig").setup({
-				ensure_installed = {
-					"jdtls",
-					"lua_ls",
-					"clangd",
-					"bashls",
-					"pyright",
-					"vtsls",
-					"html",
-					"cssls",
-					"lemminx",
-				},
-				automatic_enable = {
-					exclude = { "jdtls" },
-				},
-			})
-		end,
+		opts = {
+			ensure_installed = {
+				"jdtls",
+				"lua_ls",
+				"clangd",
+				"bashls",
+				"pyright",
+				"vtsls",
+				"html",
+				"cssls",
+				"lemminx",
+			},
+
+			automatic_enable = {
+				exclude = { "jdtls" },
+			},
+		},
 	},
 	{
 		"mason-org/mason.nvim",
 
-		-- configs
-		config = function()
-			require("mason").setup()
-		end,
+		opts = {},
 	},
 	{
 		"neovim/nvim-lspconfig",
 
-		-- configs
 		config = function()
 			-- diagnostics
 			vim.diagnostic.config({

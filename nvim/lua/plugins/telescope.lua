@@ -6,7 +6,6 @@ return {
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	},
 
-	-- configs
 	config = function()
 		require("telescope").setup({})
 
