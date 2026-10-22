@@ -8,15 +8,16 @@ return {
 				ensure_installed = {
 					"jdtls",
 					"lua_ls",
+					"clangd",
 					"bashls",
 					"pyright",
-                    "vtsls",
-                    "html",
-                    "cssls",
+					"vtsls",
+					"html",
+					"cssls",
 				},
-                automatic_enable = {
-                    exclude = { "jdtls" },
-                },
+				automatic_enable = {
+					exclude = { "jdtls" },
+				},
 			})
 		end,
 	},
@@ -36,9 +37,9 @@ return {
 			-- diagnostics
 			vim.diagnostic.config({
 				virtual_text = true,
-                float = {
-                    border = "rounded",
-                },
+				float = {
+					border = "rounded",
+				},
 			})
 
 			-- configs for lua language server
@@ -66,27 +67,25 @@ return {
 			vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
 		end,
 	},
-    {
-        "mfussenegger/nvim-jdtls",
-        lazy = false,
+	{
+		"mfussenegger/nvim-jdtls",
+		lazy = false,
 
-        config = function()
+		config = function()
+			vim.api.nvim_create_autocmd("FileType", {
+				pattern = "java",
+				callback = function()
+					require("jdtls").start_or_attach({
 
-            vim.api.nvim_create_autocmd("FileType", {
-                pattern = "java",
-                callback = function()
-
-                    require("jdtls").start_or_attach({
-
-                        cmd = { "jdtls" },
-                        root_dir = vim.fs.root(0, {
-                            "pom.xml",
-                            "mvnw",
-                            "gradlew",
-                        }),
-                    })
-                end,
-            })
-        end,
-    },
+						cmd = { "jdtls" },
+						root_dir = vim.fs.root(0, {
+							"pom.xml",
+							"mvnw",
+							"gradlew",
+						}),
+					})
+				end,
+			})
+		end,
+	},
 }
