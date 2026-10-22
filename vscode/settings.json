@@ -16,6 +16,7 @@
   "editor.minimap.enabled": false,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.formatOnSave": true,
+  "editor.detectIndentation": false, // disable automatic indentation detection
 
   // --------
   /// Files
@@ -101,6 +102,11 @@
 
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml",
+    "editor.tabSize": 2,
   },
 
   // ------
