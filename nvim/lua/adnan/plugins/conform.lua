@@ -9,8 +9,13 @@ return {
 				python = { "ruff_format" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
+				html = { "prettier" },
+				css = { "prettier" },
 				javascript = { "prettier" },
+				javascriptreact = { "prettier" },
 				json = { "prettier" },
+				jsonc = { "prettier" },
+				yaml = { "prettier" },
 			},
 
 			format_on_save = {

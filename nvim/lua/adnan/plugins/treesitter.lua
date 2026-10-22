@@ -22,7 +22,11 @@ return {
 		require("nvim-treesitter").install(parsers)
 
 		local filetypes = vim.deepcopy(parsers)
-		table.insert(filetypes, "sh") -- add 'sh' to the list because it uses the bash parser
+		vim.list_extend(filetypes, {
+			"sh",
+			"javascriptreact",
+			"jsonc",
+		}) -- additional filetypes that use existing parsers
 
 		vim.api.nvim_create_autocmd("FileType", {
 			pattern = filetypes,
