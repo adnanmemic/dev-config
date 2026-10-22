@@ -175,6 +175,11 @@
             "font": 
             {
                 "face": "FiraCode Nerd Font Mono",
+                "features": 
+                {
+                    "calt": 0,
+                    "liga": 0
+                },
                 "size": 12
             },
             "opacity": 95,
