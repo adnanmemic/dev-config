@@ -1,0 +1,28 @@
+return {
+	"stevearc/conform.nvim",
+
+	-- configs
+	config = function()
+		require("conform").setup({
+			formatters_by_ft = {
+				lua = { "stylua" },
+				python = { "ruff_format" },
+				c = { "clang-format" },
+				cpp = { "clang-format" },
+				javascript = { "prettier" },
+				json = { "prettier" },
+			},
+
+			format_on_save = {
+				timeout_ms = 500,
+				lsp_format = "fallback",
+			},
+
+			formatters = {
+				["clang-format"] = {
+					prepend_args = { "--style=file", "--fallback-style=Microsoft" },
+				},
+			},
+		})
+	end,
+}
