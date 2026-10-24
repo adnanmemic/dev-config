@@ -24,8 +24,6 @@ vim.opt.termguicolors = true
 vim.opt.splitbelow = true -- splits show up below by default
 vim.opt.splitright = true -- splits got to the right by default
 
-vim.opt.laststatus = 3 -- show only a single global status line
-
 -- highlight when yank
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()

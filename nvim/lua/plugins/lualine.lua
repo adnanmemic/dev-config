@@ -10,6 +10,7 @@ return {
 	opts = {
 		options = {
 			theme = theme,
+			globalstatus = true,
 		},
 
 		sections = {
