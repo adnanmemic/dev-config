@@ -14,6 +14,7 @@ return {
 			json = { "prettier" },
 			jsonc = { "prettier" },
 			yaml = { "prettier" },
+			sh = { "shfmt" },
 		},
 
 		format_on_save = {
