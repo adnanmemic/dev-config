@@ -20,12 +20,18 @@ for file in "${files[@]}"; do
 	ln -snfv "$PWD/$file" "$HOME/.${file##*/}"
 done
 
+
+# Files from the .config directory
 mkdir -p "$HOME/.config" # create .config if it doesn't exist
 
-# Neovim
-ln -snfv "$PWD/nvim" "$HOME/.config/nvim"
+files=(
+    nvim
+    fastfetch
+    ghostty
+)
 
-# Fastfetch
-ln -snfv "$PWD/fastfetch" "$HOME/.config/fastfetch"
+for file in "${files[@]}"; do
+	ln -snfv "$PWD/$file" "$HOME/.config/${file##*/}"
+done
 
 printf '\n\e[32mInstallation complete.\e[0m\n'

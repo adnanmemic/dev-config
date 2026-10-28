@@ -60,7 +60,7 @@ git clone https://github.com/adnanmemic/dev-config.git ~\.dev-config && Set-Loca
 .\win-install.ps1
 ```
 
-### Linux / WSL
+### Linux / WSL / MacOS
 
 1. Clone the repository and change into it
 ```bash
@@ -69,5 +69,5 @@ git clone https://github.com/adnanmemic/dev-config.git ~/.dev-config && cd ~/.de
 
 2. Run the installation script
 ```bash
-./lin-install
+./install
 ```
