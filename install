@@ -8,18 +8,17 @@ printf '\n\e[36mCreating symbolic links...\e[0m\n'
 
 # dotfiles
 files=(
-	bash/bash_profile
-	bash/bashrc
-	gitconfig
-	latexmkrc
-	zsh/zshrc
-	omp-themes
+    bash/bash_profile
+    bash/bashrc
+    gitconfig
+    latexmkrc
+    zsh/zshrc
+    omp-themes
 )
 
 for file in "${files[@]}"; do
-	ln -snfv "$PWD/$file" "$HOME/.${file##*/}"
+    ln -snfv "$PWD/$file" "$HOME/.${file##*/}"
 done
-
 
 # Files from the .config directory
 mkdir -p "$HOME/.config" # create .config if it doesn't exist
@@ -31,7 +30,7 @@ files=(
 )
 
 for file in "${files[@]}"; do
-	ln -snfv "$PWD/$file" "$HOME/.config/${file##*/}"
+    ln -snfv "$PWD/$file" "$HOME/.config/${file##*/}"
 done
 
 printf '\n\e[32mInstallation complete.\e[0m\n'
