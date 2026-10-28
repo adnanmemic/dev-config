@@ -1,2 +1,5 @@
-background-opacity = 0.95
 theme = TokyoNight 
+background-opacity = 0.95
+
+font-family = FiraCode Nerd Font Mono
+font-size = 14
