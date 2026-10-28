@@ -27,5 +27,9 @@ return {
 				prepend_args = { "--style=file", "--fallback-style=Microsoft" },
 			},
 		},
+
+		shfmt = {
+			prepend_args = { "-i", "4" },
+		},
 	},
 }
