@@ -1,40 +1,40 @@
-##################
-### Oh my posh ###
-##################
+# ------------
+# Oh my posh
+# ------------
 
 $theme = "custom"
 oh-my-posh init pwsh --config "$HOME\.omp-themes\$theme.omp.json" | Invoke-Expression
 
-#################
-### Fastfetch ###
-#################
+# -----------
+# Fastfetch
+# -----------
 
 fastfetch
 
-###############
-### Modules ###
-###############
+# ---------
+# Modules
+# ---------
 
 Import-Module -Name Terminal-Icons
 Import-Module -Name Microsoft.WinGet.CommandNotFound
 
-###############
-### Options ###
-###############
+# ---------
+# Options
+# ---------
 
 Set-PSReadLineOption -EditMode Emacs
 Set-PSReadLineOption -HistoryNoDuplicates
 Set-PSReadLineOption -MaximumHistoryCount 5000
 
-##################
-### Key remaps ###
-##################
+# ------------
+# Key remaps
+# ------------
 
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
-###############
-### Aliases ###
-###############
+# ---------
+# Aliases
+# ---------
 
 function notes {
 	Set-Location "$env:USERPROFILE\Meine Ablage\Vaults\Notes"
