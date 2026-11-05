@@ -39,17 +39,11 @@ export PATH="$MAVEN_HOME/bin:$PATH"
 # Personal scripts
 export PATH="$HOME/.local/bin:$PATH"
 
-# Go
-export PATH="/opt/go/bin:$PATH"
-
 # Neovim
 export PATH="/opt/nvim/bin:$PATH"
 
 # Latex
 export PATH="/usr/local/texlive/2026/bin/x86_64-linux:$PATH"
-
-# Racket
-export PATH="/opt/racket/bin:$PATH"
 
 # Node
 export PATH="/opt/node/bin:$PATH"
