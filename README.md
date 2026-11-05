@@ -11,6 +11,7 @@
 7. Latexmk
 8. Fastfetch
 9. Oh My Posh
+10. Ghostty
 
 ## Prerequisites
 
