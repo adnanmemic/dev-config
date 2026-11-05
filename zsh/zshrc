@@ -24,9 +24,12 @@ export VISUAL=nvim
 ### Paths ###
 #############
 
-# Maven
-export MAVEN_HOME="/opt/maven/latest"
-export PATH="$MAVEN_HOME/bin:$PATH"
+# Java
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    export JAVA_HOME=$(/usr/libexec/java_home -v 25)
+else
+    export JAVA_HOME=/usr/lib/jvm/java-25-openjdk-amd64
+fi
 
 # Personal scripts
 export PATH="$HOME/.local/bin:$PATH"
