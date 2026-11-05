@@ -5,3 +5,6 @@ font-family = FiraCode Nerd Font Mono
 font-size = 14
 
 font-feature = -calt
+
+cursor-style = block
+shell-integration-features = no-cursor
