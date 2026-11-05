@@ -16,6 +16,10 @@
             "id": "User.paste"
         },
         {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -23,32 +27,28 @@
                 "splitMode": "duplicate"
             },
             "id": "User.splitPane.A6751878"
-        },
-        {
-            "command": "find",
-            "id": "User.find"
         }
     ],
     "alwaysShowNotificationIcon": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{d3fae4b9-0cd8-4ce6-8145-817e5ec4872b}",
+    "defaultProfile": "{0bea9144-35a8-5689-87d6-22d2b12b85fe}",
     "firstWindowPreference": "defaultProfile",
     "initialCols": 180,
     "initialRows": 120,
     "keybindings": 
     [
         {
-            "id": "User.splitPane.A6751878",
-            "keys": "ctrl+shift+d"
+            "id": "Terminal.MoveFocusUp",
+            "keys": "ctrl+shift+k"
         },
         {
             "id": "User.copy.644BA8F2",
             "keys": "ctrl+c"
         },
         {
-            "id": "Terminal.MoveFocusUp",
-            "keys": "ctrl+shift+k"
+            "id": "User.splitPane.A6751878",
+            "keys": "ctrl+shift+d"
         },
         {
             "id": "Terminal.ClosePane",
@@ -67,12 +67,12 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "id": "Terminal.SwitchToTab2",
-            "keys": "alt+3"
-        },
-        {
             "id": null,
             "keys": "alt+left"
+        },
+        {
+            "id": "Terminal.SwitchToTab2",
+            "keys": "alt+3"
         },
         {
             "id": null,
@@ -99,20 +99,20 @@
             "keys": "ctrl+shift+l"
         },
         {
-            "id": "Terminal.SwitchToTab7",
-            "keys": "alt+8"
-        },
-        {
             "id": "Terminal.MoveFocusDown",
             "keys": "ctrl+shift+j"
         },
         {
-            "id": "Terminal.SwitchToTab5",
-            "keys": "alt+6"
+            "id": "Terminal.SwitchToTab7",
+            "keys": "alt+8"
         },
         {
             "id": null,
             "keys": "ctrl+alt+1"
+        },
+        {
+            "id": "Terminal.SwitchToTab5",
+            "keys": "alt+6"
         },
         {
             "id": "Terminal.SwitchToTab1",
@@ -132,11 +132,11 @@
         },
         {
             "id": null,
-            "keys": "ctrl+alt+7"
+            "keys": "ctrl+alt+4"
         },
         {
             "id": null,
-            "keys": "ctrl+alt+4"
+            "keys": "ctrl+alt+7"
         },
         {
             "id": "Terminal.SwitchToTab4",
@@ -213,24 +213,9 @@
                 "name": "Windows PowerShell"
             },
             {
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-                "hidden": true,
-                "name": "Git Bash",
-                "source": "Git"
-            },
-            {
-                "commandline": "C:\\WINDOWS\\system32\\wsl.exe --distribution-id {4a5fd33f-2a89-4c23-84e4-91b5571e799a}",
-                "guid": "{d3fae4b9-0cd8-4ce6-8145-817e5ec4872b}",
+                "guid": "{0bea9144-35a8-5689-87d6-22d2b12b85fe}",
                 "hidden": false,
-                "icon": "C:\\WSL\\Ubuntu26\\shortcut.ico",
                 "name": "Ubuntu-26.04",
-                "pathTranslationStyle": "wsl",
-                "startingDirectory": "~"
-            },
-            {
-                "guid": "{0d58965a-9f73-5362-af10-3901ad137e4c}",
-                "hidden": false,
-                "name": "archlinux",
                 "source": "Microsoft.WSL"
             }
         ]
